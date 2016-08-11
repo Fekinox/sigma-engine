@@ -3,26 +3,22 @@
 
 std::map<std::string, Sprite*> spriteList;
 
-SpriteBank::SpriteBank(SDL_Renderer* r, std::string folder)
+SpriteBank::SpriteBank()
 {
-    //Set renderer and folder to search
-    this->destrend = r;
-    this->folder = folder;
-
-    std::vector<std::string> files = FileManager::GetFilesInFolder("folder");
-
-    for(auto filename : files)
-    {
-        //Get sprite name and id
-        std::string ext = FileManager::GetFilenameExt(filename);
-        std::string id = FileManager::GetFilenameWithoutExt(filename);
-    }
+    //Initialize
+    this->destrend = NULL;
 }
 
 SpriteBank::~SpriteBank()
 {
     //Run deallocation function
     Cleanup();
+}
+
+void SpriteBank::Init(SDL_Renderer* r)
+{
+    //Set renderer pointer to given renderer
+    this->destrend = r;
 }
 
 void SpriteBank::Cleanup()
@@ -43,9 +39,7 @@ void SpriteBank::Cleanup()
     spriteList.clear();
 }
 
-void SpriteBank::AddSprite(SDL_Renderer* r,
-                           std::string id,
-                           std::string filename,
+void SpriteBank::AddSprite(std::string filename,
                            int h,
                            int bbw,
                            int bbh,
@@ -55,12 +49,14 @@ void SpriteBank::AddSprite(SDL_Renderer* r,
                            int bby,
                            bool osc)
 {
-    if(id == "") return;
+    //Get sprite name and id
+    std::string ext = FileManager::GetFilenameExt(filename);
+    std::string id = FileManager::GetFilenameWithoutExt(filename);
 
     //Create a pointer to a sprite object off the heap
     Sprite* newSprite = new Sprite();
     //Load the sprite//
-    if(newSprite->Load(r, filename) == false)
+    if(newSprite->Load(destrend, filename) == false)
     {
         return;
     }

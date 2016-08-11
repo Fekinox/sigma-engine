@@ -61,15 +61,26 @@ bool App::OnInit()
         return false;
     }
 
-	if(!spr.Load(graphicsRenderer, "media/img/ring/ring2.png"))
+	//Make some sprites
+	if(!rings.Init(graphicsRenderer))
 	{
-		return false;
+		printf("Failed to load sprites!");
 	}
 
-	spr.SetClip(40);
-	spr.SetBoundingBox(0, 0, spr.GetWidth(), spr.GetHeight());
-	spr.SetOrigin(spr.GetWidth()/2, spr.GetHeight()/2);
-	//spr.oscillate = true;
+	//Add two textures
+	rings.AddSprite("media/img/ring/ring1.png",
+                    40,
+					40,
+					40,
+					20,
+					20);
+	rings.AddSprite("media/img/ring/ring2.png",
+					40,
+					40,
+					40,
+					20,
+					20);
 
+	currentSprite = "ring1";
     return true;
 }

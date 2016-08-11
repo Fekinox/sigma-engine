@@ -20,7 +20,8 @@ class App : public Event
 
         Timer capTimer; //Frames per second cap timer
 
-        Sprite spr; //A sprite
+        SpriteBank rings; //Collection of sprites
+        std::string currentSprite; //Filename of sprite in use
         Texture statstext; //Some statstext
         SDL_Color textColor{ 0x00, 0x00, 0x00 }; //Text color
         std::stringstream stats; //Stringsteam of tstatstext
@@ -28,9 +29,12 @@ class App : public Event
         App();
         int OnExecute(); //When the program executes
     public:
-        bool OnInit(); //When the program starts
         void OnEvent(SDL_Event* e); //When polling events
         void OnExit(); //When the program is exited
+        void OnKeyDown(SDL_Keycode sym, Uint16 mod, Uint16 scancode); //When a key is pressed
+        void OnKeyUp(SDL_Keycode sym, Uint16 mod, Uint16 scancode); //When a key is released
+    public:
+        bool OnInit(); //When the program starts
         void OnLoop(); //When the program loops
         void OnRender(); //When the program renders
         void OnCleanup(); //While cleaning up

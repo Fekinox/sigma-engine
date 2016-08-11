@@ -7,18 +7,17 @@ class SpriteBank
 {
     private:
         SDL_Renderer* destrend;
-        std::string folder;
 
     public:
-        SpriteBank(SDL_Renderer* r, std::string folder);
+        SpriteBank();
 
         ~SpriteBank();
 
+        void Init(SDL_Renderer* r);
+
         void Cleanup();
     public:
-        void AddSprite(SDL_Renderer* r,
-                       std::string id,
-                       std::string filename,
+        void AddSprite(std::string filename,
                        int h,
                        int bbw,
                        int bbh,
@@ -26,7 +25,7 @@ class SpriteBank
                        int oy = 0,
                        int bbx = 0, //Bounding box's top left corner is sprite's top left by default
                        int bby = 0,
-                       bool osc = false);
+                       bool osc = false); //Oscillation is disabled by default
     public:
         Sprite* Get(std::string id);
 };
