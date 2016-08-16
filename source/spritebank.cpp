@@ -1,7 +1,7 @@
 #include "spritebank.h"
 #include "fmanage.h"
 
-std::map<std::string, Sprite*> spriteList;
+std::vector<Sprite*> spriteList;
 
 SpriteBank::SpriteBank()
 {
@@ -15,34 +15,33 @@ SpriteBank::~SpriteBank()
     Cleanup();
 }
 
-void SpriteBank::Init(SDL_Renderer* r)
+bool SpriteBank::Init(SDL_Renderer* r)
 {
     //Set renderer pointer to given renderer
     this->destrend = r;
+    return true;
 }
 
 void SpriteBank::Cleanup()
 {
     if(spriteList.size() <= 0) return;
 
-    for(auto& it : spriteList)
+    for(auto& sprite : spriteList)
     {
-        Sprite* TheSprite = (Sprite*)it.second;
-
-        if(TheSprite)
-        {
-            delete TheSprite;
-            TheSprite = NULL;
-        }
+        delete sprite;
+        sprite = NULL;
     }
 
     spriteList.clear();
 }
 
-void SpriteBank::AddSprite(std::string filename,
+void SpriteBank::AddSprite(const std::string& filename,
+                           int id,
                            int h,
                            int bbw,
                            int bbh,
+                           double ang,
+                           SDL_RendererFlip flip,
                            int ox,
                            int oy,
                            int bbx,
@@ -50,37 +49,44 @@ void SpriteBank::AddSprite(std::string filename,
                            bool osc)
 {
     //Get sprite name and id
-    std::string ext = FileManager::GetFilenameExt(filename);
-    std::string id = FileManager::GetFilenameWithoutExt(filename);
+    const auto& ext = FileManager::GetFilenameExt(filename);
 
-    //Create a pointer to a sprite object off the heap
-    Sprite* newSprite = new Sprite();
-    //Load the sprite//
-    if(newSprite->Load(destrend, filename) == false)
+    //Ignore non-png extensions
+    if(ext != "png") return;
+    else
     {
-        return;
+        //Create a pointer to a sprite object off the heap
+        Sprite* newSprite = new Sprite();
+        //Load the sprite//
+        if(newSprite->Load(destrend, filename) == false) return;
+        //Modify the sprite//
+
+        //Set clipping height (also sets maxFrames)
+        newSprite->Clip(h);
+
+        //Set bounding box
+        newSprite->BoundingBox(bbx, bby, bbw, bbh);
+
+        //Set origin
+        newSprite->Origin(ox, oy);
+
+        //Set angle
+        newSprite->SetAngle(ang);
+
+        //Set flipstate
+        newSprite->Flip(flip);
+
+        //Set oscillation
+        newSprite->Oscillate(osc);
+
+        //Map the id to the new sprite
+        spriteList.push_back(newSprite);
     }
-    //Modify the sprite//
-
-    //Set clipping height (also sets maxFrames)
-    newSprite->SetClip(h);
-
-    //Set bounding box
-    newSprite->SetBoundingBox(bbx, bby, bbw, bbh);
-
-    //Set origin
-    newSprite->SetOrigin(ox, oy);
-
-    //Set oscillation
-    newSprite->SetOscillate(osc);
-
-    //Map the id to the new sprite
-    spriteList[id] = newSprite;
 }
 
-Sprite* SpriteBank::Get(std::string id)
+Sprite* SpriteBank::Get(int id)
 {
-    if(spriteList.find(id) == spriteList.end()) return 0;
+    if(spriteList[id] == NULL) return 0;
 
     return spriteList[id];
 }

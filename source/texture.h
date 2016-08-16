@@ -34,9 +34,11 @@ class Texture
 
         void Render(int x, int y, int w, int h, int sx, int sy, int sw, int sh);
 
+        void Render(int x, int y, int w, int h, int sx, int sy, int sw, int sh, double ang, SDL_Point orig, SDL_RendererFlip flip);
+
         //Gets image dimensions
-        int GetWidth();
-        int GetHeight();
+        int Width();
+        int Height();
     private:
         //The actual hardware texture
         SDL_Texture* mTexture;

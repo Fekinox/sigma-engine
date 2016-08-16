@@ -1,18 +1,30 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
+#include <vector>
+
 class App;
 class Event;
 
 #include "texture.h"
 #include "events.h"
-#include "sprite.h"
+#include "spritebank.h"
 #include "timer.h"
 
 class App : public Event
 {
     private:
         bool Running; //Running flag
+
+        std::vector<std::string> files; //Files to load
+
+        enum sprite_file //List of file states
+        {
+            SPRITE_RING1 = 0,
+            SPRITE_RING2,
+            SPRITE_END
+        };
+        sprite_file currentSprite; //Filename of sprite in use
 
         SDL_Window* graphicsWindow; //The window
         SDL_Renderer* graphicsRenderer; //The renderer
@@ -21,10 +33,9 @@ class App : public Event
         Timer capTimer; //Frames per second cap timer
 
         SpriteBank rings; //Collection of sprites
-        std::string currentSprite; //Filename of sprite in use
         Texture statstext; //Some statstext
+        std::stringstream stats; //Stringsteam of statstext
         SDL_Color textColor{ 0x00, 0x00, 0x00 }; //Text color
-        std::stringstream stats; //Stringsteam of tstatstext
     public:
         App();
         int OnExecute(); //When the program executes

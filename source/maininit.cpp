@@ -62,25 +62,55 @@ bool App::OnInit()
     }
 
 	//Make some sprites
+	//Initialize spritebank
 	if(!rings.Init(graphicsRenderer))
 	{
 		printf("Failed to load sprites!");
 	}
 
-	//Add two textures
-	rings.AddSprite("media/img/ring/ring1.png",
-                    40,
-					40,
-					40,
-					20,
-					20);
-	rings.AddSprite("media/img/ring/ring2.png",
-					40,
-					40,
-					40,
-					20,
-					20);
+	//Add two sprites
+	std::string filedir = ("media/img/ring/");
 
-	currentSprite = "ring1";
-    return true;
+	files.push_back(filedir + "ring1.png");
+	files.push_back(filedir + "ring2.png");
+
+	//For every filename in files, check the iterator to connect it to a sprite, then increment it.
+	int it = SPRITE_RING1;
+	for(const auto& filename : files)
+	{
+		switch(it)
+		{
+			case static_cast<int>(SPRITE_RING1):
+			{
+				rings.AddSprite(filename,
+								it,
+								40,
+								40,
+								40,
+								0.0,
+								SDL_FLIP_NONE,
+								20,
+								20);
+				break;
+			}
+			case static_cast<int>(SPRITE_RING2):
+			{
+				rings.AddSprite(filename,
+								it,
+								40,
+								40,
+								40,
+								0.0,
+								SDL_FLIP_HORIZONTAL,
+								10,
+								10);
+				break;
+			}
+			default: continue; break;
+		}
+		it++;
+	}
+	currentSprite = SPRITE_RING1;
+
+	return true;
 }

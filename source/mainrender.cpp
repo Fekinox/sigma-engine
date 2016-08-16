@@ -5,12 +5,12 @@ void App::OnRender()
     SDL_SetRenderDrawColor(graphicsRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
     SDL_RenderClear(graphicsRenderer);
 
-    spr.Render(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+    rings.Get(currentSprite)->Render(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
 
-    statstext.Render((SCREEN_WIDTH-statstext.GetWidth())/2, spr.BBBottom());
+    statstext.Render((SCREEN_WIDTH-statstext.Width())/2, rings.Get(currentSprite)->BBBottom());
 
     SDL_SetRenderDrawColor(graphicsRenderer, 0x00, 0x00, 0xFF, 0xFF);
-    SDL_Rect bb = {spr.BBLeft(), spr.BBTop(), spr.BBWidth(), spr.BBHeight()};
+    SDL_Rect bb = {rings.Get(currentSprite)->BBLeft(), rings.Get(currentSprite)->BBTop(), rings.Get(currentSprite)->BBWidth(), rings.Get(currentSprite)->BBHeight()};
     SDL_RenderDrawRect(graphicsRenderer, &bb);
 
     SDL_SetRenderDrawColor(graphicsRenderer, 0xFF, 0x00, 0x00, 0xFF);

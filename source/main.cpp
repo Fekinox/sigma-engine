@@ -32,6 +32,6 @@ int App::OnExecute()
 
 int main(int argc, char** argv)
 {
-    App theApp;
-    return theApp.OnExecute();
+    App app;
+    return app.OnExecute();
 }

@@ -13,21 +13,24 @@ class SpriteBank
 
         ~SpriteBank();
 
-        void Init(SDL_Renderer* r);
+        bool Init(SDL_Renderer* r);
 
         void Cleanup();
     public:
-        void AddSprite(std::string filename,
+        void AddSprite(const std::string& filename,
+                       int id,
                        int h,
                        int bbw,
                        int bbh,
+                       double ang = 0.0,
+                       SDL_RendererFlip flip = SDL_FLIP_NONE,
                        int ox = 0, //Origin is top left by default
                        int oy = 0,
                        int bbx = 0, //Bounding box's top left corner is sprite's top left by default
                        int bby = 0,
                        bool osc = false); //Oscillation is disabled by default
     public:
-        Sprite* Get(std::string id);
+        Sprite* Get(int id);
 };
 
 #endif //SPRITEBANK_H

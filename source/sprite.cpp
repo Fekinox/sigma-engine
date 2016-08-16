@@ -1,5 +1,7 @@
 #include "sprite.h"
 
+/* ---------------- BASE ---------------- */
+
 Sprite::Sprite()
 {
     //Initialize values
@@ -15,8 +17,13 @@ Sprite::Sprite()
 
     destrend = NULL;
 
-    ox = sx;
-    oy = sy;
+    d_ox = 0;
+    d_oy = 0;
+
+    origin.x = d_ox;
+    origin.y = d_oy;
+
+    flip = SDL_FLIP_NONE;
 
     bb.x = 0;
     bb.y = 0;
@@ -38,45 +45,6 @@ void Sprite::free()
     cliph = 0;
 }
 
-void Sprite::OnAnimate()
-{
-    if (maxFrames != 0) //If sprite is actually animatable
-    {
-        if (oscillate) //If oscillate flag is checked
-        {
-            if (frameInc > 0) //If frameInc goes up
-            {
-                if (currentFrame >= maxFrames) //If the next increment takes it up to maxFrames
-                {
-                    frameInc = -frameInc;
-                }
-            }
-            else
-            {
-                if (currentFrame <= 0) frameInc = -frameInc; //If the next decrement takes it below zero
-            }
-        }
-        else
-        {
-            if (currentFrame >= maxFrames)
-            {
-                currentFrame = -1;
-            }
-        }
-    }
-    currentFrame += frameInc;
-}
-
-void Sprite::SetCurrentFrame(int Frame)
-{
-    currentFrame = Frame;
-}
-
-int Sprite::GetCurrentFrame()
-{
-    return currentFrame;
-}
-
 bool Sprite::Load(SDL_Renderer* r, std::string path)
 {
     //Free preexisting texture
@@ -94,7 +62,7 @@ bool Sprite::Load(SDL_Renderer* r, std::string path)
     tex.Load(destrend, path);
 
     //Clipping height is by default max height
-    cliph = this->GetHeight();
+    cliph = this->Height();
 
     //Max frames is by default 0
 
@@ -104,24 +72,75 @@ bool Sprite::Load(SDL_Renderer* r, std::string path)
 
     //Oscillate is by default 0
 
+    //Flip is by default neutral
+
     return true;
 }
 
-void Sprite::SetClip(int h)
+void Sprite::OnAnimate()
+{
+    if (maxFrames != 0) //If sprite is actually animatable
+    {
+        if (oscillate) //If oscillate flag is checked
+        {
+            if (frameInc > 0) //If frameInc goes up
+            {
+                if (currentFrame >= maxFrames) frameInc = -frameInc; //If the next increment takes it up to maxFrames
+            }
+            else
+            {
+                if (currentFrame <= 0) frameInc = -frameInc; //If the next decrement takes it below zero
+            }
+        }
+        else
+        {
+            if (currentFrame >= maxFrames)
+            {
+                currentFrame = -1;
+            }
+        }
+    }
+    currentFrame += frameInc;
+}
+
+/* ---------------- SPRITE MODIFIERS ---------------- */
+
+void Sprite::CurrentFrame(int Frame)
+{
+    currentFrame = Frame;
+}
+
+void Sprite::ResetFrame()
+{
+    CurrentFrame(-1);
+    frameInc = 1;
+}
+
+void Sprite::Clip(int h)
 {
     cliph = h;
     //Set max frames equal to the amount of times cliph can fit on the texture. Minus one to account for the first frame***
-    maxFrames = (this->GetSheetHeight() / cliph)-1;
+    maxFrames = (this->SheetHeight() / cliph)-1;
 }
 
 void Sprite::Render(int x, int y)
 {
     sx = x;
     sy = y;
-    tex.Render(this->GetXaOrig(), this->GetYaOrig(), this->GetWidth(), cliph, 0, this->GetCurrentFrame()*cliph, this->GetWidth(), cliph);
+    tex.Render(this->XaOrig(),
+               this->YaOrig(),
+               this->Width(),
+               cliph,
+               0,
+               this->CurrentFrame()*cliph,
+               this->Width(),
+               cliph,
+               ang,
+               origin,
+               flip);
 }
 
-void Sprite::SetBoundingBox(int x, int y, int w, int h)
+void Sprite::BoundingBox(int x, int y, int w, int h)
 {
     bb.x = x;
     bb.y = y;
@@ -129,75 +148,141 @@ void Sprite::SetBoundingBox(int x, int y, int w, int h)
     bb.h = h;
 }
 
-void Sprite::SetOrigin(int x, int y)
+void Sprite::SetAngle(double degrees)
 {
-    ox = x;
-    oy = y;
+    ang = degrees;
 }
 
-void Sprite::SetOscillate(bool osc)
+void Sprite::AddAngle(double degrees)
+{
+    ang += degrees;
+}
+
+void Sprite::Flip(SDL_RendererFlip state)
+{
+    switch(state)
+    {
+        case SDL_FLIP_NONE:
+        {
+            //Reset to default origin
+            origin.x = d_ox;
+            origin.y = d_oy;
+            break;
+        }
+        case SDL_FLIP_HORIZONTAL:
+        {
+            //Flip the x origin
+            origin.x = Width() - XOrig();
+            break;
+        }
+        case SDL_FLIP_VERTICAL:
+        {
+            //Flip the y origin
+            origin.y = Width() - YOrig();
+            break;
+        }
+    }
+    flip = state;
+}
+
+void Sprite::Origin(int x, int y)
+{
+    d_ox = x;
+    d_oy = y;
+    origin.x = d_ox;
+    origin.y = d_oy;
+}
+
+void Sprite::Oscillate(bool osc)
 {
     oscillate = osc;
 }
 
-int Sprite::GetX()
+/* ---------------- SPRITE VALUE FINDERS ---------------- */
+
+int Sprite::CurrentFrame()
+{
+    return currentFrame;
+}
+
+int Sprite::X()
 {
     return sx;
 }
 
-int Sprite::GetY()
+int Sprite::Y()
 {
     return sy;
 }
 
-int Sprite::GetWidth()
+int Sprite::Width()
 {
-    return tex.GetWidth();
+    return tex.Width();
 }
 
-int Sprite::GetHeight()
+int Sprite::Height()
 {
     return cliph;
 }
 
-int Sprite::GetXOrig()
+int Sprite::XOrigD()
 {
-    return ox;
+    return d_ox;
 }
 
-int Sprite::GetYOrig()
+int Sprite::YOrigD()
 {
-    return oy;
+    return d_oy;
 }
 
-int Sprite::GetXaOrig()
+int Sprite::XOrig()
 {
-    return sx - ox;
+    return origin.x;
 }
 
-int Sprite::GetYaOrig()
+int Sprite::YOrig()
 {
-    return sy - oy;
+    return origin.y;
+}
+
+int Sprite::XaOrig()
+{
+    return sx - XOrig();
+}
+
+int Sprite::YaOrig()
+{
+    return sy - YOrig();
+}
+
+double Sprite::Angle()
+{
+    return ang;
+}
+
+SDL_RendererFlip Sprite::Flip()
+{
+    return flip;
 }
 
 int Sprite::BBTop()
 {
-    return GetYaOrig() + bb.y;
+    return YaOrig() + bb.y;
 }
 
 int Sprite::BBBottom()
 {
-    return GetYaOrig() + bb.y + bb.w;
+    return YaOrig() + bb.y + bb.w;
 }
 
 int Sprite::BBLeft()
 {
-    return GetXaOrig() + bb.x;
+    return XaOrig() + bb.x;
 }
 
 int Sprite::BBRight()
 {
-    return GetXaOrig() + bb.x + bb.w;
+    return XaOrig() + bb.x + bb.w;
 }
 
 int Sprite::BBWidth()
@@ -209,7 +294,7 @@ int Sprite::BBHeight()
     return bb.h;
 }
 
-int Sprite::GetSheetHeight()
+int Sprite::SheetHeight()
 {
-    return tex.GetHeight();
+    return tex.Height();
 }

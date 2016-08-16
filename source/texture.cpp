@@ -49,7 +49,7 @@ bool Texture::Load(SDL_Renderer* r, std::string path)
         }
         else
         {
-            //Get image dimensions
+            //  image dimensions
             mWidth = loadedSurface->w;
             mHeight = loadedSurface->h;
         }
@@ -146,11 +146,19 @@ void Texture::Render(int x, int y, int w, int h, int sx, int sy, int sw, int sh)
     SDL_RenderCopy(destrend, mTexture, &Source, &Destination);
 }
 
-int Texture::GetWidth()
+void Texture::Render(int x, int y, int w, int h, int sx, int sy, int sw, int sh, double ang, SDL_Point orig, SDL_RendererFlip flip)
+{
+    SDL_Rect Source = {sx, sy, sw, sh};
+    SDL_Rect Destination = {x, y, w, h};
+
+    SDL_RenderCopyEx(destrend, mTexture, &Source, &Destination, ang, &orig, flip);
+}
+
+int Texture::Width()
 {
     return mWidth;
 }
-int Texture::GetHeight()
+int Texture::Height()
 {
     return mHeight;
 }

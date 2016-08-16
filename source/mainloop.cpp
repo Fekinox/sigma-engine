@@ -2,13 +2,16 @@
 
 void App::OnLoop()
 {
-    stats.str("");
-    stats << "X: " << spr.GetX() << " Y: " << spr.GetY() << " Origin X: " << spr.GetXOrig() << " Y: " << spr.GetYOrig() << " Origin Position X: " << spr.GetXaOrig() << " Y: " << spr.GetYaOrig();
+	stats.str("");
+    stats << "Sprite ID: " << currentSprite
+		  << " Flip State: " << rings.Get(currentSprite)->Flip()
+          << " X: " << rings.Get(currentSprite)->XaOrig()
+          << " Y: " << rings.Get(currentSprite)->YaOrig();
 
 	if(!statstext.Load(graphicsRenderer, globalFont, stats.str().c_str(), textColor))
     {
         printf("Failed to load text texture!");
     }
 
-    spr.OnAnimate();
+    rings.Get(currentSprite)->OnAnimate();
 }
