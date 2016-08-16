@@ -87,10 +87,10 @@ bool App::OnInit()
 								40,
 								40,
 								40,
-								0.0,
-								SDL_FLIP_NONE,
 								20,
-								20);
+								20,
+								0.0,
+								SDL_FLIP_NONE);
 				break;
 			}
 			case static_cast<int>(SPRITE_RING2):
@@ -100,10 +100,10 @@ bool App::OnInit()
 								40,
 								40,
 								40,
-								0.0,
-								SDL_FLIP_HORIZONTAL,
 								10,
-								10);
+								10,
+								0.0,
+								SDL_FLIP_HORIZONTAL);
 				break;
 			}
 			default: continue; break;

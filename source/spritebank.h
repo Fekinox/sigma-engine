@@ -22,10 +22,10 @@ class SpriteBank
                        int h,
                        int bbw,
                        int bbh,
-                       double ang = 0.0,
-                       SDL_RendererFlip flip = SDL_FLIP_NONE,
                        int ox = 0, //Origin is top left by default
                        int oy = 0,
+                       double ang = 0.0,
+                       SDL_RendererFlip flip = SDL_FLIP_NONE,
                        int bbx = 0, //Bounding box's top left corner is sprite's top left by default
                        int bby = 0,
                        bool osc = false); //Oscillation is disabled by default
