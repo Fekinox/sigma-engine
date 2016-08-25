@@ -6,13 +6,13 @@ class Entity
     public:
         static std::vector<Entity*> entityList;
     protected:
-        float x;
-        float y;
+        int x;
+        int y;
         int w;
         int h;
 
-        float bbx;
-        float bby;
+        int bbx;
+        int bby;
         int bbw;
         int bbh;
 
@@ -25,13 +25,17 @@ class Entity
     public:
         Entity();
 
-        virtual ~Entity();
+        virtual ~Entity() = 0;
 
-        virtual bool onLoad();
+        virtual bool onLoad() = 0;
 
-        virtual void onLoop();
+        virtual void onLoop() = 0;
 
-        virtual void onRender();
+        virtual void onRender() = 0;
 
-        virtual void onCleanup();
+        virtual void onCleanup() = 0;
+
+    public:
+        int X() { return x; }
+        int Y() { return y; }
 };

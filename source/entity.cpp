@@ -21,18 +21,3 @@ Entity::Entity()
 
     currentFrame = 0;
 }
-
-Entity::~Entity()
-{}
-
-bool Entity::onLoad()
-{return true;}
-
-void Entity::onLoop()
-{}
-
-void Entity::onRender()
-{}
-
-void Entity::onCleanup()
-{}

@@ -6,6 +6,8 @@ void App::OnCleanup()
     rings.Cleanup();
 
     //Free used textures
+    fpstext.free();
+    peak_fpstext.free();
     statstext.free();
 
     //Free global font

@@ -1,0 +1,8 @@
+{
+  "execPath": "C:/MinGW/bin/g++.exe",
+  "gccDefaultCFlags": "-c -Wall",
+  "gccDefaultCppFlags": "-c -Wall -std=c++11 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf",
+  "gccErrorLimit": 15,
+  "gccIncludePaths": "., ./source, C:/SDL/SDL2-2.0.4/i686-w64-mingw32/include/SDL2, C:/SDL/SDL2-2.0.4/i686-w64-mingw32/lib",
+  "gccSuppressWarnings": true
+}

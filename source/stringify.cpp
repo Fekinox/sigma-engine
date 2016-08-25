@@ -50,7 +50,7 @@ float Stringify::ToFloat(const std::string& s)
 {
     if(s == "") return 0;
 
-    int x;
+    float x;
     std::stringstream strStream(s);
 
     strStream >> x;
@@ -62,7 +62,7 @@ double Stringify::ToDouble(const std::string& s)
 {
     if(s == "") return 0;
 
-    int x;
+    double x;
     std::stringstream strStream(s);
 
     strStream >> x;

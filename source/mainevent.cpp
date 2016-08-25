@@ -1,4 +1,5 @@
 #include "main.h"
+#include "log.h"
 
 void App::OnEvent(SDL_Event* event)
 {
@@ -16,28 +17,23 @@ void App::OnKeyDown(SDL_Keycode sym, Uint16 mod, Uint16 scancode)
     {
         case SDLK_SPACE:
         {
-            rings.Get(currentSprite)->ResetFrame();
-            if(currentSprite == SPRITE_RING1) currentSprite = SPRITE_RING2;
-            else if (currentSprite == SPRITE_RING2) currentSprite = SPRITE_RING1;
+            currentSprite->ResetFrame();
+            if(currentSprite->Name() == "ring1") currentSprite = rings.Get(SPRITE_RING2);
+            else if(currentSprite->Name() == "ring2") currentSprite = rings.Get(SPRITE_RING1);
             break;
         }
-        case SDLK_h:
+        case SDLK_c:
         {
-            if (rings.Get(currentSprite)->Flip() != SDL_FLIP_HORIZONTAL)
-                rings.Get(currentSprite)->Flip(SDL_FLIP_HORIZONTAL);
-            break;
+            system("cls");
         }
-        case SDLK_n:
+        case SDLK_f:
         {
-            if (rings.Get(currentSprite)->Flip() != SDL_FLIP_NONE)
-                rings.Get(currentSprite)->Flip(SDL_FLIP_NONE);
-            break;
-        }
-        case SDLK_v:
-        {
-            if (rings.Get(currentSprite)->Flip() != SDL_FLIP_VERTICAL)
-                rings.Get(currentSprite)->Flip(SDL_FLIP_VERTICAL);
-            break;
+            LOG("- FPS ANALYTICS -"
+            << "\nFrames rendered since starting the program: " << pF
+            << "\nFrames Tallied In Last Timeframe (" << TIMEFRAME/1000 << " s): " << FTILT
+            << "\nFrames rendered since last FTILT check: " << cF
+            << "\n\nRaw FPS: " << fpsc
+            << "\nPeak FPS: " << fpsp);
         }
     }
 }

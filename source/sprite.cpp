@@ -1,11 +1,13 @@
 #include "sprite.h"
+#include "fmanage.h"
+#include "log.h"
 
 /* ---------------- BASE ---------------- */
 
 Sprite::Sprite()
 {
     //Initialize values
-    currentFrame = -1;
+    currentFrame = 0;
     maxFrames = 0;
     frameInc = 1;
     oldTime = 0;
@@ -17,11 +19,11 @@ Sprite::Sprite()
 
     destrend = NULL;
 
-    d_ox = 0;
-    d_oy = 0;
+    d_origin.x = 0;
+    d_origin.y = 0;
 
-    origin.x = d_ox;
-    origin.y = d_oy;
+    origin.x = d_origin.x;
+    origin.y = d_origin.y;
 
     flip = SDL_FLIP_NONE;
 
@@ -31,25 +33,20 @@ Sprite::Sprite()
     bb.h = 0;
 
     oscillate = false;
-}
 
-Sprite::~Sprite()
-{
-    this->free();
+    name = "";
 }
 
 void Sprite::free()
 {
     //Unload texture, and reset pointers
+    LOG("Unloading sprite " << name);
     tex.free();
     cliph = 0;
 }
 
 bool Sprite::Load(SDL_Renderer* r, std::string path)
 {
-    //Free preexisting texture
-    tex.free();
-
     //Check the renderer
     if(r == NULL)
     {
@@ -57,22 +54,30 @@ bool Sprite::Load(SDL_Renderer* r, std::string path)
     }
 
     //Set the renderer pointer to the given renderer
-    destrend = r;
+    this->destrend = r;
 
-    tex.Load(destrend, path);
+    if(!tex.Load(destrend, path))
+    {
+        LOG("Sprite texture failed to be created from " << path);
+        return false;
+    }
+
+    name = FileManager::GetFilenameWithoutExt(path);
 
     //Clipping height is by default max height
     cliph = this->Height();
 
     //Max frames is by default 0
 
-    //Origin position is by default 0
+    //Origin position is by default 0, 0
 
     //Bounding box is by default 0
 
     //Oscillate is by default 0
 
     //Flip is by default neutral
+
+    LOG("Loaded sprite " << name);
 
     return true;
 }
@@ -99,8 +104,8 @@ void Sprite::OnAnimate()
                 currentFrame = -1;
             }
         }
+        currentFrame += frameInc;
     }
-    currentFrame += frameInc;
 }
 
 /* ---------------- SPRITE MODIFIERS ---------------- */
@@ -138,6 +143,8 @@ void Sprite::Render(int x, int y)
                ang,
                origin,
                flip);
+    //Update animation
+    OnAnimate();
 }
 
 void Sprite::BoundingBox(int x, int y, int w, int h)
@@ -165,20 +172,22 @@ void Sprite::Flip(SDL_RendererFlip state)
         case SDL_FLIP_NONE:
         {
             //Reset to default origin
-            origin.x = d_ox;
-            origin.y = d_oy;
+            origin.x = d_origin.x;
+            origin.y = d_origin.y;
             break;
         }
         case SDL_FLIP_HORIZONTAL:
         {
             //Flip the x origin
             origin.x = Width() - XOrig();
+            origin.y = d_origin.y;
             break;
         }
         case SDL_FLIP_VERTICAL:
         {
             //Flip the y origin
             origin.y = Width() - YOrig();
+            origin.x = d_origin.x;
             break;
         }
     }
@@ -187,114 +196,13 @@ void Sprite::Flip(SDL_RendererFlip state)
 
 void Sprite::Origin(int x, int y)
 {
-    d_ox = x;
-    d_oy = y;
-    origin.x = d_ox;
-    origin.y = d_oy;
+    d_origin.x = x;
+    d_origin.y = y;
+    origin.x = d_origin.x;
+    origin.y = d_origin.y;
 }
 
 void Sprite::Oscillate(bool osc)
 {
     oscillate = osc;
-}
-
-/* ---------------- SPRITE VALUE FINDERS ---------------- */
-
-int Sprite::CurrentFrame()
-{
-    return currentFrame;
-}
-
-int Sprite::X()
-{
-    return sx;
-}
-
-int Sprite::Y()
-{
-    return sy;
-}
-
-int Sprite::Width()
-{
-    return tex.Width();
-}
-
-int Sprite::Height()
-{
-    return cliph;
-}
-
-int Sprite::XOrigD()
-{
-    return d_ox;
-}
-
-int Sprite::YOrigD()
-{
-    return d_oy;
-}
-
-int Sprite::XOrig()
-{
-    return origin.x;
-}
-
-int Sprite::YOrig()
-{
-    return origin.y;
-}
-
-int Sprite::XaOrig()
-{
-    return sx - XOrig();
-}
-
-int Sprite::YaOrig()
-{
-    return sy - YOrig();
-}
-
-double Sprite::Angle()
-{
-    return ang;
-}
-
-SDL_RendererFlip Sprite::Flip()
-{
-    return flip;
-}
-
-int Sprite::BBTop()
-{
-    return YaOrig() + bb.y;
-}
-
-int Sprite::BBBottom()
-{
-    return YaOrig() + bb.y + bb.w;
-}
-
-int Sprite::BBLeft()
-{
-    return XaOrig() + bb.x;
-}
-
-int Sprite::BBRight()
-{
-    return XaOrig() + bb.x + bb.w;
-}
-
-int Sprite::BBWidth()
-{
-    return bb.w;
-}
-int Sprite::BBHeight()
-{
-    return bb.h;
-}
-
-int Sprite::SheetHeight()
-{
-    return tex.Height();
 }

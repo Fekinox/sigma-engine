@@ -17,19 +17,19 @@ class Sprite
         int sx;                 //Sprite's X coords
         int sy;                 //Sprite's Y coords
         SDL_Renderer* destrend; //Destination renderer
-        int d_ox;               //Default values for origin
-        int d_oy;
+        SDL_Point d_origin;
         SDL_Point origin;       //X distance from 0
         double ang;             //Angle
         SDL_RendererFlip flip;  //Flip state
-        SDL_Rect bb;            //Bounding box.
+        SDL_Rect bb;            //Bounding box
+        std::string name;       //Name of the sprite
     public:
         //BASE FUNCTIONS//
 
         //Initializer
         Sprite();
         //Destroyer
-        ~Sprite();
+        ~Sprite() { free(); }
         //Frees sprite from memory
         void free();
         //Updates the current frame
@@ -39,7 +39,7 @@ class Sprite
         //Renders the sprite to the screen
         void Render(int x, int y);
 
-        //MODIFIER FUNCTIONS
+        //MUTATOR FUNCTIONS
 
         //Sets bounding box coords. x and y are the displacement from 0.
         void BoundingBox(int x, int y, int w, int h);
@@ -60,28 +60,29 @@ class Sprite
         //Enables or disables sprite oscillation (forward-reverse)
         void Oscillate(bool osc);
 
-        //VALUE FINDER FUNCTIONS
+        //ACCESSOR FUNCTIONS
 
-        int X();                   //Find sprite's literal x/y
-        int Y();
-        int Width();               //Find sprite's literal w/h
-        int Height();
-        int XOrigD();              //Return the sprite's default origin value
-        int YOrigD();
-        int XOrig();               //Return the sprite's internal origin
-        int YOrig();
-        int XaOrig();              //Return the sprite's literal x/y, modified by the origin
-        int YaOrig();
-        double Angle();            //Return the angle
-        SDL_RendererFlip Flip();   //Return the current flipstate
-        int BBTop();               //Return the lowest y of the BB
-        int BBBottom();            //Return the highest y of the BB
-        int BBLeft();              //Return the lowest X of the BB
-        int BBRight();             //Return the highest X of the BB
-        int BBWidth();             //Return the width of the BB
-        int BBHeight();            //Return the height of the BB
-        int SheetHeight();         //Return the height of the entire spritesheet
-        int CurrentFrame();        //Gets current frame
+        int X() { return sx; }                              //Find sprite's literal x/y
+        int Y() { return sy; }
+        int Width() { return tex.Width(); }                 //Find sprite's literal w/h
+        int Height() { return cliph; }
+        int XOrigD() { return d_origin.x; }                       //Return the sprite's default origin value
+        int YOrigD() { return d_origin.y; }
+        int XOrig() { return origin.x; }                    //Return the sprite's internal origin
+        int YOrig() { return origin.y; } ;
+        int XaOrig() { return sx - origin.x; }              //Return the sprite's literal x/y, modified by the origin
+        int YaOrig() { return sy - origin.y; }
+        double Angle() { return ang; }                      //Return the angle
+        SDL_RendererFlip Flip() { return flip; }            //Return the current flipstate
+        int BBTop() { return YaOrig() + bb.y; }             //Return the lowest y of the BB
+        int BBBottom() { return YaOrig() + bb.y + bb.w; }   //Return the highest y of the BB
+        int BBLeft() { return XaOrig() + bb.x; }            //Return the lowest X of the BB
+        int BBRight() { return YaOrig() + bb.y + bb.w; }    //Return the highest X of the BB
+        int BBWidth() { return bb.w; }                      //Return the width of the BB
+        int BBHeight() { return bb.h; }                     //Return the height of the BB
+        int SheetHeight() { return tex.Height(); }          //Return the height of the entire spritesheet
+        int CurrentFrame() { return currentFrame; }         //Return the current frame
+        std::string Name() { return name; }                 //Return the name
 };
 
 #endif //SPRITE_H

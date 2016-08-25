@@ -1,0 +1,194 @@
+
+--- LOG DATE: Thu Aug 25 03:31:42 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+-- INITIALIZATION
+
+Setting global font...
+Spritebank created
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Thu Aug 25 03:40:35 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+Setting global font...
+Spritebank created
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Thu Aug 25 04:12:43 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+
+
+Setting global font...
+Spritebank created
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+- FPS ANALYTICS -
+Frames rendered since starting the program: 257
+Frames Tallied In Last Timeframe (1 s): 61
+Frames rendered since last FTILT check: 46
+
+Raw FPS: 62.5
+Peak FPS: 62.5
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Thu Aug 25 04:45:25 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+
+
+Setting global font...
+Spritebank created
+Created texture from media/img/error/error.png
+Loaded sprite error
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unable to load image media/img/ring/ring.png
+Sprite texture failed to be created from media/img/ring/ring.png
+Sprite media/img/ring/ring.png not found; getting error sprite
+Getting sprite ring1
+Getting sprite error
+Unloading sprite ring1
+Unloading sprite error
+--- LOG DATE: Thu Aug 25 04:47:06 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+
+
+Setting global font...
+Spritebank created
+Created texture from media/img/error/error.png
+Loaded sprite error
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unable to load image media/img/ring/ring.png
+Sprite texture failed to be created from media/img/ring/ring.png
+Sprite media/img/ring/ring.png not found; getting error sprite
+Getting sprite ring1
+Getting sprite error
+Unloading sprite ring1
+Unloading sprite error
+--- LOG DATE: Thu Aug 25 05:06:27 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+
+
+Setting global font...
+Spritebank created
+Created texture from media/img/error/error.png
+Loaded sprite error
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unable to load image media/img/ring/ring.png
+Sprite texture failed to be created from media/img/ring/ring.png
+Sprite media/img/ring/ring.png not found; getting error sprite
+Getting sprite ring1
+Getting sprite error
+Unloading sprite ring1
+Unloading sprite error
+--- LOG DATE: Thu Aug 25 05:07:05 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+
+
+Setting global font...
+Spritebank created
+Created texture from media/img/error/error.png
+Loaded sprite error
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unable to load image media/img/ring/ring.png
+Sprite texture failed to be created from media/img/ring/ring.png
+Sprite media/img/ring/ring.png not found; getting error sprite
+Getting sprite ring1
+Getting sprite error
+Unloading sprite ring1
+Unloading sprite error
+--- LOG DATE: Thu Aug 25 05:24:48 2016
+
+
+-- INITIALIZATION
+Initializing SDL...
+Setting texture filtering to linear...
+Creating window...
+Creating renderer...
+Initializing SDL_image...
+Initializing SDL_ttf...
+
+
+Setting global font...
+Spritebank created
+Created texture from media/img/error/error.png
+Loaded sprite error
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unable to load image media/img/ring/ring.png
+Sprite texture failed to be created from media/img/ring/ring.png
+Sprite media/img/ring/ring.png not found; getting error sprite
+Getting sprite ring1
+Getting sprite error
+Unloading sprite ring1
+Unloading sprite error

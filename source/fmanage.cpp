@@ -1,5 +1,6 @@
 #include "fmanage.h"
 #include "stringify.h"
+#include "log.h"
 
 #include <sys/param.h>
 #include <dirent.h>
@@ -95,7 +96,7 @@ std::vector<std::string> FileManager::GetFilesInFolder(std::string folder)
         }
         else
         {
-            printf("Unable to open directory!");
+            LOG("Unable to open directory!");
         }
     #endif
 

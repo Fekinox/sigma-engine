@@ -23,7 +23,6 @@
 #include <SDL_ttf.h>
 #include <string>
 #include <sstream>
-#include <stdio.h>
 #include <iostream>
 
 const int FPS = 15; //Frames per second

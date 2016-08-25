@@ -6,6 +6,7 @@ App::App()
     graphicsRenderer = NULL;
     globalFont = NULL;
     Running = true;
+    fps.precision(6);
 }
 
 int App::OnExecute()
@@ -15,6 +16,8 @@ int App::OnExecute()
         return -1;
     }
 
+	ticks.start();
+
     SDL_Event e;
     while(Running)
     {
@@ -23,8 +26,9 @@ int App::OnExecute()
         {
             OnEvent(&e);
         }
-        OnLoop();
+        OnPreRender();
         OnRender();
+        OnPostRender();
     }
     OnCleanup();
     return 0;
