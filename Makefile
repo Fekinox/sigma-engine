@@ -4,7 +4,7 @@
 #
 
 #SRCS specify the source files to compile
-SRCS = source/events.cpp source/fmanage.cpp source/main.cpp source/maincleanup.cpp source//mainevent.cpp source/maininit.cpp source/mainloop.cpp source/mainrender.cpp source/sprite.cpp source/spritebank.cpp source/stringify.cpp source/texture.cpp source/timer.cpp
+SRCS = source/spritebank.cpp source/events.cpp source/fmanage.cpp source/main.cpp source/maincleanup.cpp source/maininit.cpp source/mainevent.cpp source/mainprerender.cpp source/mainrender.cpp source/mainpostrender.cpp source/sprite.cpp source/stringify.cpp source/texture.cpp source/timer.cpp
 #OBJS specify the resultant source files formed from compilation
 OBJS = $(SRCS:.cpp=.o)
 #CC specifies which compiler we're using
@@ -16,14 +16,14 @@ LIBRARIES = -LC:/SDL/SDL2-2.0.4/i686-w64-mingw32/lib
 #COMPILER_FLAGS specifies the additional compilation options we're using
 # -w suppresses all warnings
 # -Wl,-subsystem,windows gets rid of the console window -Wl,-subsystem,windows
-CFLAGS = -g -std=c++0x -Wl,-subsystem,windows -Wall
+CFLAGS = -g -std=c++11 -Wall
 #LINKER_FLAGS specifies the libraries we're linking against
-LFLAGS = -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
+LFLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 #MAIN specifies the name of our exectuable
 MAIN = a
 #This is the target that compiles our executable
 
-.PHONY : depend clean
+.PHONY : depend clean cleanlog
 
 all : $(MAIN)
 	@echo Delta Engine compiled!
@@ -36,6 +36,9 @@ $(MAIN) : $(OBJS)
 
 clean :
 	$(RM) source/*.o *~ $(MAIN)
+
+cleanlog :
+	$(RM) log.txt
 
 depend : $(SRCS)
 	makedepend $(INCLUDES) $^

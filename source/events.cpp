@@ -1,9 +1,5 @@
 #include "events.h"
 
-Event::Event() {}
-
-Event::~Event() {}
-
 void Event::OnEvent(SDL_Event* e)
 {
 	switch(e->type)
@@ -174,87 +170,3 @@ void Event::OnEvent(SDL_Event* e)
 			}
 	}
 }
-
-void Event::OnExit() {}
-
-void Event::OnKeyDown( SDL_Keycode sym, Uint16 mod, Uint16 scancode )
-{
-	printf("keycode:%d\tmod:%d\tscancode:%d pressed!\n", sym, mod, scancode );
-}
-
-void Event::OnKeyUp( SDL_Keycode sym, Uint16 mod, Uint16 scancode )
-{
-	printf("keycode:%d\tmod:%d\tscancode:%d unpressed!\n", sym, mod, scancode );
-}
-
-void Event::OnMouseMove( int mx, int my, int relx, int rely, bool Left, bool Right, bool Middle )
-{
-	printf("x:%d\ty:%d\n", mx, my );
-}
-
-void Event::OnLButtonDown ( int mx, int my )
-{
-	printf("Left Click pressed in x:%d\ty:%d\n", mx, my);
-}
-
-void Event::OnLButtonUp ( int mx, int my )
-{
-	printf("Left Click unpressed in x:%d\ty:%d\n", mx, my);
-}
-
-void Event::OnRButtonDown ( int mx, int my )
-{
-	printf("Right Click pressed in x:%d\ty:%d\n", mx, my);
-}
-
-void Event::OnRButtonUp ( int mx, int my )
-{
-	printf("Right Click unpressed in x:%d\ty:%d\n", mx, my);
-}
-
-void Event::OnMButtonDown ( int mx, int my )
-{
-	printf("Middle Click pressed in x:%d\ty:%d\n", mx, my);
-}
-
-void Event::OnMButtonUp ( int mx, int my )
-{
-	printf("Middle Click unpressed in x:%d\ty:%d\n", mx, my);
-}
-
-void Event::OnMouseFocus()
-{
-	printf("Mouse entered the window!\n");
-}
-
-void Event::OnMouseBlur()
-{
-	printf("Mouse leaved the window!\n");
-}
-
-void Event::OnInputFocus()
-{
-	printf("Keyboard Focus the window!\n");
-}
-
-void Event::OnInputBlur()
-{
-	printf("Keyboar losed focus on the window!\n");
-}
-
-void Event::OnWindowResized( int data1, int data2 )
-{
-	printf( "Window Resized to: width:%d\theight:%d\n", data1, data2 );
-}
-
-void Event::OnJoyAxis(Uint8 which, Uint8 axis, Sint16 value){}
-
-void Event::OnJoyBall(Uint8 which, Uint8 ball, Sint16 xrel, Sint16 yrel){}
-
-void Event::OnJoyHat(Uint8 which, Uint8 hat, Uint8 button){}
-
-void Event::OnJoyButtonDown(Uint8 which, Uint8 button){}
-
-void Event::OnJoyButtonUp(Uint8 which, Uint8 button){}
-
-void Event::OnUser(Uint8 type, int code, void* data1, void* data2){}

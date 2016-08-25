@@ -1,51 +1,43 @@
 #include "spritebank.h"
 #include "fmanage.h"
+#include "log.h"
 
-std::map<std::string, Sprite*> spriteList;
+#define ERRFILE "media/img/error/error.png"
 
-SpriteBank::SpriteBank(SDL_Renderer* r, std::string folder)
+SpriteBank::SpriteBank()
 {
-    //Set renderer and folder to search
-    this->destrend = r;
-    this->folder = folder;
-
-    std::vector<std::string> files = FileManager::GetFilesInFolder("folder");
-
-    for(auto filename : files)
-    {
-        //Get sprite name and id
-        std::string ext = FileManager::GetFilenameExt(filename);
-        std::string id = FileManager::GetFilenameWithoutExt(filename);
-    }
+    //Initialize
+    this->destrend = NULL;
 }
 
-SpriteBank::~SpriteBank()
+bool SpriteBank::Init(SDL_Renderer* r)
 {
-    //Run deallocation function
-    Cleanup();
+    //Set renderer pointer to given renderer
+    this->destrend = r;
+    LOG("Spritebank created");
+
+    //Add error sprite
+    errSprite = new Sprite();
+    errSprite->Load(destrend, "media/img/error/error.png");
+    errSprite->Clip(32);
+    return true;
 }
 
 void SpriteBank::Cleanup()
 {
     if(spriteList.size() <= 0) return;
 
-    for(auto& it : spriteList)
+    for(auto& sprite : spriteList)
     {
-        Sprite* TheSprite = (Sprite*)it.second;
-
-        if(TheSprite)
-        {
-            delete TheSprite;
-            TheSprite = NULL;
-        }
+        delete sprite;
+        sprite = NULL;
     }
 
     spriteList.clear();
 }
 
-void SpriteBank::AddSprite(SDL_Renderer* r,
-                           std::string id,
-                           std::string filename,
+void SpriteBank::AddSprite(const std::string& filename,
+                           int id,
                            int h,
                            int bbw,
                            int bbh,
@@ -53,38 +45,66 @@ void SpriteBank::AddSprite(SDL_Renderer* r,
                            int oy,
                            int bbx,
                            int bby,
+                           double ang,
+                           SDL_RendererFlip flip,
                            bool osc)
 {
-    if(id == "") return;
+    //Get sprite name and id
+    const auto& ext = FileManager::GetFilenameExt(filename);
 
-    //Create a pointer to a sprite object off the heap
-    Sprite* newSprite = new Sprite();
-    //Load the sprite//
-    if(newSprite->Load(r, filename) == false)
+    //Ignore non-png extensions
+    if(ext != "png") return;
+    else
     {
-        return;
+        //Create a pointer to a sprite object off the heap
+        Sprite* newSprite = new Sprite();
+        //Load the sprite//
+        if(newSprite->Load(destrend, filename) == false)
+        {
+            LOG("Sprite " << filename << " not found; getting error sprite");
+            spriteList.push_back(errSprite);
+            return;
+        }
+        //Modify the sprite//
+
+        //Set clipping height (also sets maxFrames)
+        newSprite->Clip(h);
+
+        //Set bounding box
+        newSprite->BoundingBox(bbx, bby, bbw, bbh);
+
+        //Set origin
+        newSprite->Origin(ox, oy);
+
+        //Set angle
+        newSprite->SetAngle(ang);
+
+        //Set flipstate
+        newSprite->Flip(flip);
+
+        //Set oscillation
+        newSprite->Oscillate(osc);
+
+        //Map the id to the new sprite
+        spriteList.push_back(newSprite);
     }
-    //Modify the sprite//
-
-    //Set clipping height (also sets maxFrames)
-    newSprite->SetClip(h);
-
-    //Set bounding box
-    newSprite->SetBoundingBox(bbx, bby, bbw, bbh);
-
-    //Set origin
-    newSprite->SetOrigin(ox, oy);
-
-    //Set oscillation
-    newSprite->SetOscillate(osc);
-
-    //Map the id to the new sprite
-    spriteList[id] = newSprite;
 }
 
-Sprite* SpriteBank::Get(std::string id)
+Sprite* SpriteBank::Get(int id)
 {
-    if(spriteList.find(id) == spriteList.end()) return 0;
+    if(spriteList[id] == NULL)
+    {
+        LOG("Sprite " << id << " does not exist.");
+        return 0;
+    }
+
+    LOG("Getting sprite " << spriteList[id]->Name());
 
     return spriteList[id];
+}
+
+Sprite* SpriteBank::MakeAndGet(const std::string& filename, int id, int h, int bbw, int bbh, int ox, int oy, int bbx, int bby, double ang, SDL_RendererFlip flip, bool osc)
+{
+    AddSprite(filename, id, h, bbw, bbh, ox, oy, bbx, bby, ang, flip, osc);
+    return Get(id);
 }

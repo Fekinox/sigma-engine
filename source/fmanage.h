@@ -1,7 +1,7 @@
 #ifndef __FMANAGE_H__
 #define __FMANAGE_H__
 
-#include <map>
+#include <unordered_map>
 #include <vector>
 #include <fstream>
 
@@ -18,9 +18,9 @@ class FileManager
 
         static std::string GetCWD();
 
-        static std::string GetFilenameWithoutExt(std::string filename);
+        static std::string GetFilenameWithoutExt(const std::string filename);
 
-        static std::string GetFilenameExt(std::string filename);
+        static std::string GetFilenameExt(const std::string filename);
 };
 
 #endif //FMANAGE_H

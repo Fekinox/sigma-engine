@@ -23,10 +23,9 @@
 #include <SDL_ttf.h>
 #include <string>
 #include <sstream>
-#include <stdio.h>
 #include <iostream>
 
-const int FPS = 60; //Frames per second
+const int FPS = 15; //Frames per second
 const int SCREEN_WIDTH = 800; //Screen width
 const int SCREEN_HEIGHT = 600; //Screen height
 

@@ -1,0 +1,58 @@
+This is the general layout of things I want to implement in the engine, in no particular order.
+
+[] = Already implemented.
+() = To be implemented.
+<> = Considering implementing- optional.
+
+ENGINE LAYOUT
+    [BASE]
+        [Program initialization]
+        [Logging macro]
+            [Logs to a file]
+        [File manager (for bulk loading of filenames)]
+        [Event handling]
+            (Controller support)
+        (Game states (menu, ingame, loading, etc.))
+        (Saving and loading)
+            (XML-based level format)
+        <Multithreading (potentially helpful for loading screens, but on hold until everything else is complete and stable)>
+    [GRAPHICAL]
+        [SPRITES]
+            [Sprite repository for loading and unloading sprites in bulk]
+            [Bounding boxes]
+                (Circular bounding box (annoying to draw the primitive of!))
+                <N-gon bounding box (impractical, but could be a fun experiment)>
+            [Origins]
+        (PARTICLE ENGINE)
+            (Particle emitter objects that belch particles until destructed)
+            (Particles)
+            (Static array of particle objects)
+        (TILESETS)
+            (Generating tile textures from an XML file)
+        <ADVANCED PRIMITIVES>
+            <Circle>
+            <Triangle>
+            <Quadrilateral>
+            <N-gon>
+            <Function>
+
+    (GAME ELEMENTS)
+        (ENTITIES)
+            [Basic support for entity objects]
+            [Static vector of game entities]
+            (Entity input handling, rendering, and prerender/postrender functions)
+        (COLLISION DETECTION)
+            (Interactions between two b-boxes, a b-box and a b-circle, and two b-circles)
+            (Collision list to handle collision notifications and apply flags)
+        (MAPS)
+            (Generating map and tile information from an XML file)
+
+    (AUDIO)
+        (SFX object that destructs itself after playing its sound)
+        (BGM object that plays a looping song in the background)
+            <Support for OpenMPT (all of my songs will be made in that program, and it'd be neat if I could implement modules into it somehow)>
+    <LEVEL EDITOR>
+        <All of this will come after the base game is complete>
+        <Program that generates level formats>
+        <Cutscene/event/dialogue handler>
+        <Level testing>

@@ -1,35 +1,61 @@
 #include "main.h"
+#include "log.h"
+
+#include <ctime>
+
+//Initialization
 
 bool App::OnInit()
 {
+	//Print message to console indicating debug state
+	#if DEBUG == 1
+		std::cout << "DEBUG MODE IS ACTIVE.\n";
+		time_t rawtime;
+		time(&rawtime);
+		#if TOFILE == 1
+			std::cout << "LOGGING TO A FILE.\n";
+		#else
+			std::cout << "PRINTING TO CONSOLE.\n";
+		#endif
+		LOG("--- LOG DATE: " << ctime(&rawtime) << "\n");
+	#else
+		std::cout << "DEBUG MODE IS INACTIVE.\n";
+	#endif //DEBUG
+
+	LOG("-- INITIALIZATION");
+
 	//Initialize SDL
+	LOG("Initializing SDL...");
 	if(SDL_Init(SDL_INIT_EVERYTHING) < 0)
 	{
-		printf("SDL failed to initialize! Details: %s\n", SDL_GetError());
+		LOG("SDL failed to initialize! Error: " << SDL_GetError());
 		return false;
 	}
     else
 	{
 		//Set texture filtering to linear
+		LOG("Setting texture filtering to linear...");
 		if( !SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" ) )
 		{
-			printf( "Warning: Linear texture filtering not enabled!" );
+			LOG("Warning: Linear texture filtering not enabled!");
 		}
 
 		//Create a window
+		LOG("Creating window...");
 		graphicsWindow = SDL_CreateWindow("Densite", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 		if(graphicsWindow == NULL)
 		{
-			printf("Window failed to display! Details: %s\n", SDL_GetError());
+			LOG("Failed to create window! Error: " << SDL_GetError());
 			return false;
 		}
 		else
 		{
 			//Create renderer for window
+			LOG("Creating renderer...");
 			graphicsRenderer = SDL_CreateRenderer(graphicsWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 			if(graphicsRenderer == NULL)
 			{
-				printf("Renderer failed to be created! Details: %s\n", SDL_GetError());
+				LOG("Renderer failed to be created! Error: " << SDL_GetError());
 				return false;
 			}
 			else
@@ -37,39 +63,86 @@ bool App::OnInit()
 				SDL_SetRenderDrawColor(graphicsRenderer, 0xFF, 0x66, 0x66, 0xFF);
 
 				//Initialize PNG loading
+				LOG("Initializing SDL_image...");
+
 				int imgFlags = IMG_INIT_PNG;
 				if( !( IMG_Init( imgFlags ) & imgFlags ) )
 				{
-					printf("SDL_image failed to initialize! Details: %s\n", IMG_GetError());
+					LOG("SDL_image failed to initialize! Error: " << IMG_GetError());
 					return false;
 				}
 
 				//Initialize SDL_ttf
+				LOG("Initializing SDL_ttf...");
+
 				if (TTF_Init() == -1)
 				{
-					printf("SDL_ttf could not initialize!");
+					LOG("SDL_ttf failed to initialize! Error: " << TTF_GetError());
 					return false;
 				}
 			}
 		}
 	}
 
+    LOG("\n");
+
     globalFont = TTF_OpenFont("media/font/ProggyCleanCE.ttf", 16);
+	LOG("Setting global font...");
     if(globalFont == NULL)
     {
-        printf("Failed to load font!");
+        LOG("Failed to load font!");
         return false;
     }
 
-	if(!spr.Load(graphicsRenderer, "media/img/ring/ring2.png"))
+	//Make some sprites
+	//Initialize spritebank
+	if(!rings.Init(graphicsRenderer))
 	{
-		return false;
+		LOG("Failed to load sprites!");
 	}
 
-	spr.SetClip(40);
-	spr.SetBoundingBox(0, 0, spr.GetWidth(), spr.GetHeight());
-	spr.SetOrigin(spr.GetWidth()/2, spr.GetHeight()/2);
-	//spr.oscillate = true;
+	//Add two sprites
+	std::string filedir = ("media/img/ring/");
 
-    return true;
+	files.push_back(filedir + "ring1.png");
+	files.push_back(filedir + "ring.png");
+
+	//For every filename in files, check the iterator to connect it to a sprite, then increment it.
+	int it = SPRITE_RING1;
+	for(const auto& filename : files)
+	{
+		switch(it)
+		{
+			case (int)SPRITE_RING1:
+			{
+				rings.AddSprite(filename,
+								it,
+								40,
+								40,
+								40,
+								20,
+								20);
+				break;
+			}
+			case (int)SPRITE_RING2:
+			{
+				rings.AddSprite(filename,
+								it,
+								40,
+								20,
+								20,
+								20,
+								20,
+								10,
+								10);
+				break;
+			}
+			default: continue; break;
+		}
+		it++;
+	}
+
+	currentSprite = rings.Get(SPRITE_RING1);
+
+	return true;
 }

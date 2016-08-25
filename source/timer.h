@@ -1,7 +1,7 @@
 #ifndef __TIMER_H__
 #define __TIMER_H__
 
-#include "preprocessor.h"
+#include <SDL.h>
 
 class Timer
 {

@@ -1,5 +1,6 @@
 #include "fmanage.h"
 #include "stringify.h"
+#include "log.h"
 
 #include <sys/param.h>
 #include <dirent.h>
@@ -74,7 +75,7 @@ std::vector<std::string> FileManager::GetFilesInFolder(std::string folder)
         for(id file in directoryContents)
         {
             std::string filename = path + DIR_SEPARATOR + [File cStringUsingEncoding:1];
-            List.push_back(filename);
+            list.push_back(filename);
         }
     #else
         DIR* dirHandle = NULL;
@@ -95,7 +96,7 @@ std::vector<std::string> FileManager::GetFilesInFolder(std::string folder)
         }
         else
         {
-            printf("Unable to open directory!");
+            LOG("Unable to open directory!");
         }
     #endif
 
@@ -117,20 +118,23 @@ std::string FileManager::GetCWD()
     return cwd;
 }
 
-std::string FileManager::GetFilenameWithoutExt(std::string filename)
+std::string FileManager::GetFilenameWithoutExt(const std::string filename)
 {
+    //Get last part of filename
     std::vector<std::string> parts = Stringify::Explode(filename, DIR_SEPARATOR);
     std::string newFilename = parts[parts.size() - 1];
 
+    //Explode that filename and get it without extension
     parts = Stringify::Explode(newFilename, ".");
     newFilename = parts[0];
 
     return newFilename;
 }
 
-std::string FileManager::GetFilenameExt(std::string filename)
+std::string FileManager::GetFilenameExt(const std::string filename)
 {
-    std::vector<std::string> parts = Stringify::Explode(filename, DIR_SEPARATOR);
+    std::vector<std::string> parts = Stringify::Explode(filename, ".");
 
-    return (parts.size() <= 1 ? "" : parts[parts.size() - 1]);
+    std::string newExt = (parts.size() <= 1 ? "" : parts[parts.size() - 1]);
+    return newExt;
 }

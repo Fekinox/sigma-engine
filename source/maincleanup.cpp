@@ -3,9 +3,11 @@
 void App::OnCleanup()
 {
     //Free used sprites
-    spr.free();
+    rings.Cleanup();
 
     //Free used textures
+    fpstext.free();
+    peak_fpstext.free();
     statstext.free();
 
     //Free global font
@@ -15,8 +17,8 @@ void App::OnCleanup()
     //Destroy window
 	SDL_DestroyRenderer(graphicsRenderer);
 	SDL_DestroyWindow(graphicsWindow);
-	graphicsRenderer = 0;
-	graphicsWindow = 0;
+	graphicsRenderer = NULL;
+	graphicsWindow = NULL;
 
 	//Quit SDL subsystems
 	TTF_Quit();
