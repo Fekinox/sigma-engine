@@ -5,7 +5,7 @@
 #
 
 #SRCS specify the source files to compile
-SRCS = source/compcollision.cpp source/comprender.cpp source/compinput.cpp source/hitbox.cpp source/component.cpp source/ring.cpp source/font.cpp source/spritebank.cpp source/events.cpp source/fmanage.cpp source/main.cpp source/maincleanup.cpp source/maininit.cpp source/mainevent.cpp source/mainprerender.cpp source/mainrender.cpp source/mainpostrender.cpp source/sprite.cpp source/stringify.cpp source/texture.cpp source/timer.cpp
+SRCS = source/compcollision.cpp source/comprender.cpp source/compinput.cpp source/hitbox.cpp source/ring.cpp source/font.cpp source/spritebank.cpp source/events.cpp source/fmanage.cpp source/main.cpp source/maincleanup.cpp source/maininit.cpp source/mainevent.cpp source/mainprerender.cpp source/mainrender.cpp source/mainpostrender.cpp source/sprite.cpp source/stringify.cpp source/texture.cpp source/timer.cpp
 #OBJS specify the resultant source files formed from compilation
 OBJS = $(SRCS:.cpp=.o)
 #CC specifies which compiler we're using

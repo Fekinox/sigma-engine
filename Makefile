@@ -1,7 +1,7 @@
 #
 # 'make'        build executable file 'mycc'
 # 'make clean'  removes all .o and executable files
-# 'make dpeend' creates dependencies
+# 'make depend' creates dependencies
 #
 
 #SRCS specify the source files to compile

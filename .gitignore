@@ -49,3 +49,6 @@ Temporary Items
 *.o
 *.cpp~
 *.hpp~
+*.swp
+Makefile~
+Makefile~
