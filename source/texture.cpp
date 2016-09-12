@@ -1,154 +1,153 @@
-#include "texture.h"
+/*
+ * Texture wrapper
+ *
+ * Texture()								Initializes values.
+ * ~Texture()								Alias to free()
+ * Load(r, path)							Loads a texture to r from a file defined by path
+ * Load(r, text, font)						Loads text texture to r from a string text and font font
+ * free()									Deletes the texture and resets pointers
+ * Render(x, y)								Renders the texture at regular x and y
+ * Render(x, y, dest)						Renders the texture at regular x and y, and stretches it
+ * Render(x, y, src, dest)					Renders part of the texture defined by source to a destination
+ * Render(x, y, src, dest, ang, orig, flip)	Renders part of the texture defined by source to a destination, and modifies its angle, origin, and flip
+*/
+#include "texture.hpp"
 
-#include "log.h"
+#include "log.hpp"
 
 Texture::Texture()
 {
-    //Initialize
-    tex = NULL;
-    w = 0;
-    h = 0;
-    destrend = NULL;
-    font = NULL;
+	//Initialize
+	tex = nullptr;
+	w = 0;
+	h = 0;
+	destrend = nullptr;
 }
 
-bool Texture::Load(SDL_Renderer* r, std::string path)
+bool Texture::Load(SDL_Renderer* r, const std::string path)
 {
-    //Remove preexisting texture
-    free();
+	//Remove preexisting texture
+	free();
 
-    //Check the renderer
-    if(r == NULL)
-    {
-        return false;
-    }
+	//Check the renderer
+	if(r == nullptr)
+	{
+		return false;
+	}
 
-    //Set the renderer pointer to the given renderer
-    destrend = r;
+	//The surface
+	SDL_Surface* loadedSurface;
 
-    //The surface
-    SDL_Surface* loadedSurface;
+	//Load image at specified path
+	loadedSurface = IMG_Load(path.c_str());
+	if(loadedSurface == nullptr)
+	{
+		LOG("Unable to load image " << path);
+		return false;
+	}
+	else
+	{
+		//Set the renderer pointer to the given renderer
+		destrend = r;
 
-    //Load image at specified path
-    loadedSurface = IMG_Load(path.c_str());
-    if(loadedSurface == NULL)
-    {
-        LOG("Unable to load image " << path);
-        return false;
-    }
-    else
-    {
-        //Create texture from surface pixels
-        tex = SDL_CreateTextureFromSurface(destrend, loadedSurface);
-        if(tex == NULL)
-        {
-            LOG("Unable to make texture");
-            return false;
-        }
-        else
-        {
-            //  image dimensions
-            w = loadedSurface->w;
-            h = loadedSurface->h;
-        }
+		//Create texture from surface pixels
+		tex = SDL_CreateTextureFromSurface(destrend, loadedSurface);
+		if(tex == NULL)
+		{
+			LOG("Unable to make texture");
+			return false;
+		}
+		else
+		{
+			//  image dimensions
+			w = loadedSurface->w;
+			h = loadedSurface->h;
+		}
 
-        //Get rid of old loaded surface
-        SDL_FreeSurface(loadedSurface);
-    }
+		//Get rid of old loaded surface
+		SDL_FreeSurface(loadedSurface);
+	}
 
-    //Return success
-    LOG("Created texture from " << path);
-    return tex != NULL;
+	//Return success
+	LOG("Created texture from " << path);
+	return tex != nullptr;
 }
 
-bool Texture::Load(SDL_Renderer* r, TTF_Font* f, std::string textureText, SDL_Color textColor)
+bool Texture::Load(SDL_Renderer* r, const std::string textureText, Font& font)
 {
-    //Remove preexisting texture
-    free();
+	//Remove preexisting texture
+	free();
 
-    //Check renderer and font
-    if(r == NULL)
-    {
-        return false;
-    }
+	//Check renderer
+	if(font.GetFont() == nullptr || r == nullptr)
+	{
+		return false;
+	}
 
-    if(f == NULL)
-    {
-        return false;
-    }
+	//The surface
+	SDL_Surface* textSurface;
 
-    //Set pointers
-    destrend = r;
-    font = f;
+	//Render text surface
+	textSurface = TTF_RenderText_Solid(font.GetFont(), textureText.c_str(), font.GetColor());
+	if(textSurface == nullptr)
+	{
+		LOG("Unable to make text from " << textureText);
+	}
+	else
+	{
+		//Set pointers
+		destrend = r;
 
-    //The surface
-    SDL_Surface* textSurface;
+		//Create texture from surface pixels
+		tex = SDL_CreateTextureFromSurface(destrend, textSurface);
+		if(tex == nullptr)
+		{
+			LOG("Unable to make texture");
+		}
+		else
+		{
+			//Get image dimensions
+			w = textSurface->w;
+			h = textSurface->h;
+		}
 
-    //Render text surface
-    textSurface = TTF_RenderText_Solid(font, textureText.c_str(), textColor);
-    if(textSurface == NULL)
-    {
-        LOG("Unable to make text from " << textureText);
-    }
-    else
-    {
-        //Create texture from surface pixels
-        tex = SDL_CreateTextureFromSurface(destrend, textSurface);
-        if(tex == NULL)
-        {
-            LOG("Unable to make texture");
-        }
-        else
-        {
-            //Get image dimensions
-            w = textSurface->w;
-            h = textSurface->h;
-        }
+		//Get rid of old loaded surface
+		SDL_FreeSurface(textSurface);
+	}
 
-        //Get rid of old loaded surface
-        SDL_FreeSurface(textSurface);
-    }
-
-    //Return success
-    return tex != NULL;
+	//Return success
+	return tex != nullptr;
 }
 
 void Texture::free()
 {
-    //If texture exists
-    if(tex != NULL)
-    {
-        SDL_DestroyTexture(tex);
-        tex = NULL;
-        w = 0;
-        h = 0;
-    }
+	//If texture exists
+	if(tex != nullptr)
+	{
+		SDL_DestroyTexture(tex);
+		tex = nullptr;
+		w = 0;
+		h = 0;
+	}
 }
 
-void Texture::Render(int x, int y) //Basic render. Takes the default width and height.
+void Texture::Render(const int x, const int y) //Basic render. Takes the default width and height.
 {
-    Render(x, y, w, h);
+	SDL_Rect source = {x, y, w, h};
+	Render(source);
 }
 
-void Texture::Render(int x, int y, int w, int h) //Stretch render. Stretches rendered texture to the given size.
+void Texture::Render(const SDL_Rect dest)
 {
-    SDL_Rect Destination = {x, y, w, h};
-
-    SDL_RenderCopy(destrend, tex, NULL, &Destination);
+	SDL_RenderCopy(destrend, tex, NULL, &dest);
 }
 
-void Texture::Render(int x, int y, int w, int h, int sx, int sy, int sw, int sh) //Clip render. Clips specific part of a texture, and stretches to the given size.
+void Texture::Render(const SDL_Rect src, const SDL_Rect dest)
 {
-    SDL_Rect Source = {sx, sy, sw, sh};
-    SDL_Rect Destination = {x, y, w, h};
-
-    SDL_RenderCopy(destrend, tex, &Source, &Destination);
+	SDL_RenderCopy(destrend, tex, &src, &dest);
 }
 
-void Texture::Render(int x, int y, int w, int h, int sx, int sy, int sw, int sh, double ang, SDL_Point orig, SDL_RendererFlip flip) //Super render. Adds angle, an actual origin, and flip.
+void Texture::Render(const SDL_Rect src, const SDL_Rect dest, const double ang, const SDL_Point orig, const SDL_RendererFlip flip)
 {
-    SDL_Rect Source = {sx, sy, sw, sh};
-    SDL_Rect Destination = {x, y, w, h};
-
-    SDL_RenderCopyEx(destrend, tex, &Source, &Destination, ang, &orig, flip);
+	SDL_RenderCopyEx(destrend, tex, &src, &dest, ang, &orig, flip);
 }

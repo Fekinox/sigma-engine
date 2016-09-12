@@ -1,41 +1,41 @@
-#include "main.h"
+#include "main.hpp"
 
 App::App()
 {
-    graphicsWindow = NULL;
-    graphicsRenderer = NULL;
-    globalFont = NULL;
-    Running = true;
-    fps.precision(6);
+	graphicsWindow = NULL;
+	graphicsRenderer = NULL;
+	Running = true;
 }
 
 int App::OnExecute()
 {
-    if(OnInit() == false)
-    {
-        return -1;
-    }
+	if(OnInit() == false)
+	{
+		return -1;
+	}
 
-	ticks.start();
+	SDL_Event e;
+	while(Running)
+	{
+		frameTicks.start();
+		while(SDL_PollEvent(&e))
+		{
+			OnEvent(&e);
+		}
 
-    SDL_Event e;
-    while(Running)
-    {
-        capTimer.start();
-        while(SDL_PollEvent(&e))
-        {
-            OnEvent(&e);
-        }
-        OnPreRender();
-        OnRender();
-        OnPostRender();
-    }
-    OnCleanup();
-    return 0;
+		if(Running)
+		{
+			OnPreRender();
+			OnRender();
+			OnPostRender();
+		}
+	}
+	OnCleanup();
+	return 0;
 }
 
 int main(int argc, char** argv)
 {
-    App app;
-    return app.OnExecute();
+	App app;
+	return app.OnExecute();
 }

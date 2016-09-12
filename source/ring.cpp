@@ -1,65 +1,82 @@
-#include "ring.h"
+#include "ring.hpp"
 
-Ring::Ring(float x, float y)
+void	Ring_Input::SendInput( int k, bool state )
 {
-    //Initialize variables
-    this->x = x;
-    this->y = y;
-
-    xvel = 0;
-    yvel = 0;
-
-    xacc = 0;
-    yacc = 0;
-
-    key_up = key_down = key_left = key_right = false;
-
-    //Load sprites
-    sprites.AddSprite("media/img/ring/ring1.png",
-                      0,
-                      40,
-                      40,
-                      40,
-                      20,
-                      20);
-    sprites.AddSprite("media/img/ring/ring2.png",
-                      1,
-                      40,
-                      40,
-                      40,
-                      20,
-                      20);
-    currentSprite = SPRITE_RING1;
+	switch(k)
+	{
+		case (int)Type::swit:
+			state ?	k_swit.Press()	: k_swit.Release();
+			break;
+		case (int)Type::anim:
+			state ?	k_anim.Press()	: k_anim.Release();
+			break;
+	}
 }
 
-Ring::~Ring()
+void	Ring_Input::Update( Comp_Render& rend )
 {
-    //Cleanup sprites
-    sprites.Cleanup();
+	//If k_swit was pressed
+	if(k_swit.Pressed())
+	{
+		rend.Spr()->ResetFrame();
+		rend.Spr((rend.Spr()->Name() == "ring1")	? 2 : 0);
+	}
+
+	//If k_anim was pressed
+	if(k_anim.Pressed())
+	{
+		rend.Spr()->Animate(!rend.Spr()->Animate());
+	}
 }
 
-void Ring::Update()
+bool	Ring::Init(SDL_Renderer* r)
 {
-    if(!(key_up && key_down))
-    {
-        key_up ? yacc = -1 : yacc = 0;
-        key_down ? yacc = 1 : yacc = 0;
-    }
-    if(!(key_left && key_right))
-    {
-        key_left ? xacc = -1 : xacc = 0;
-        key_right ? xacc = 1 : xacc = 0;
-    }
+	//If spritebank fails to initialize, exit
+	if(rend.Init(r) == false) return false;
 
-    xvel += xacc;
-    yvel += yacc;
+	//Create vector of filenames
+	std::vector<std::string> files;
+	
+	//Create directory, then append filenames to that directory
+	std::string dir = "media/img/ring/";
+	files.push_back(dir + "ring1.png");
+	files.push_back(dir + "ring2.png");
+	files.push_back(dir + "ring3.png");
 
-    x += xvel;
-    y += yvel;
+	//For each filename in files...
+	int it = sprite_ring1;
+	for(const auto& filename : files)
+	{
+		//Create a sprite for each
+		switch(it)
+		{
+			case (int)sprite_ring1:
+			{
+				rend.spriteset.AddSprite(filename, it, 40, {20, 20});
+				break;
+			}
+			case (int)sprite_ring2:
+			{
+				rend.spriteset.AddSprite(filename, it, 40, {20, 20});
+				break;
+			}
+			case (int)sprite_ring3:
+			{
+				rend.spriteset.AddSprite(filename, it, 40, {20, 20});
+			}
+		}
+		it++;
+	}
 
-    x = std::max(x, 0);
-    x = std::min (x, SCREEN_WIDTH);
+	//Set bounding box
+	bb.hbox.SetBB({0, 0, 40, 40});
 
-    y = std::max(y, 0);
-    y = std::min(y, SCREEN_HEIGHT);
+	//Set currentSprite to the first sprite
+	rend.Spr(sprite_ring1);
+	return true;
+}
+
+void	Ring::Update()
+{
+	input.Update(rend);
 }

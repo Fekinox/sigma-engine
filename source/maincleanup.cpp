@@ -1,27 +1,31 @@
-#include "main.h"
+#include "main.hpp"
 
 void App::OnCleanup()
 {
-    //Free used sprites
-    rings.Cleanup();
+	//DESTRUCTION//
+	LOG("-- DESTRUCTION");
 
-    //Free used textures
-    fpstext.free();
-    peak_fpstext.free();
-    statstext.free();
+	SDL_SetRenderDrawColor(graphicsRenderer, 0x00, 0x00, 0x00, 0xFF);
+	SDL_RenderClear(graphicsRenderer);
+	SDL_RenderPresent(graphicsRenderer);
 
-    //Free global font
-    TTF_CloseFont(globalFont);
-    globalFont = NULL;
+	statstext.free();
 
-    //Destroy window
+	delete gfont;
+	gfont = nullptr;
+
+	//Deleting spritebanks
+	//rings.Cleanup();
+
+	//Destroy window
 	SDL_DestroyRenderer(graphicsRenderer);
 	SDL_DestroyWindow(graphicsWindow);
-	graphicsRenderer = NULL;
-	graphicsWindow = NULL;
+	graphicsRenderer 	= nullptr;
+	graphicsWindow 		= nullptr;
 
 	//Quit SDL subsystems
 	TTF_Quit();
+	LOG("Quitting TTF");
 	IMG_Quit();
 	SDL_Quit();
 }

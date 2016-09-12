@@ -1,4 +1,4 @@
-#include "stringify.h"
+#include "stringify.hpp"
 
 std::string Stringify::Int(int x)
 {
@@ -74,8 +74,10 @@ std::vector<std::string> Stringify::Explode(std::string s, const std::string& se
 {
     std::vector<std::string> res;
 
-    unsigned int f;
+    unsigned long long f = 0;
+
     f = s.find_first_of(sep); //If a separator has been found
+
     while(f != std::string::npos) //While the end of string hasn't been reached
     {
         if(f > 0)

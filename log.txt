@@ -1,194 +1,4179 @@
-
---- LOG DATE: Thu Aug 25 03:31:42 2016
+--- LOG DATE: Sat Sep 10 18:37:00 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
--- INITIALIZATION
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
+Unloading sprite NULL
 Created texture from media/img/ring/ring2.png
 Loaded sprite ring2
 Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
 Unloading sprite ring1
 Unloading sprite ring2
---- LOG DATE: Thu Aug 25 03:40:35 2016
+--- LOG DATE: Sat Sep 10 18:45:33 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
+Unloading sprite NULL
 Created texture from media/img/ring/ring2.png
 Loaded sprite ring2
 Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
 Unloading sprite ring1
 Unloading sprite ring2
---- LOG DATE: Thu Aug 25 04:12:43 2016
+--- LOG DATE: Sat Sep 10 18:46:52 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
+Unloading sprite NULL
 Created texture from media/img/ring/ring2.png
 Loaded sprite ring2
 Getting sprite ring1
-- FPS ANALYTICS -
-Frames rendered since starting the program: 257
-Frames Tallied In Last Timeframe (1 s): 61
-Frames rendered since last FTILT check: 46
 
-Raw FPS: 62.5
-Peak FPS: 62.5
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
 Unloading sprite ring1
 Unloading sprite ring2
---- LOG DATE: Thu Aug 25 04:45:25 2016
+--- LOG DATE: Sat Sep 10 18:48:48 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
-Created texture from media/img/error/error.png
-Loaded sprite error
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
-Unable to load image media/img/ring/ring.png
-Sprite texture failed to be created from media/img/ring/ring.png
-Sprite media/img/ring/ring.png not found; getting error sprite
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
 Getting sprite ring1
-Getting sprite error
-Unloading sprite ring1
-Unloading sprite error
---- LOG DATE: Thu Aug 25 04:47:06 2016
+
+
+--- LOG DATE: Sat Sep 10 18:53:29 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
-Created texture from media/img/error/error.png
-Loaded sprite error
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
-Unable to load image media/img/ring/ring.png
-Sprite texture failed to be created from media/img/ring/ring.png
-Sprite media/img/ring/ring.png not found; getting error sprite
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
 Getting sprite ring1
-Getting sprite error
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
 Unloading sprite ring1
-Unloading sprite error
---- LOG DATE: Thu Aug 25 05:06:27 2016
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 19:02:47 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
-Created texture from media/img/error/error.png
-Loaded sprite error
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
-Unable to load image media/img/ring/ring.png
-Sprite texture failed to be created from media/img/ring/ring.png
-Sprite media/img/ring/ring.png not found; getting error sprite
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
 Getting sprite ring1
-Getting sprite error
-Unloading sprite ring1
-Unloading sprite error
---- LOG DATE: Thu Aug 25 05:07:05 2016
+
+
+--- LOG DATE: Sat Sep 10 19:04:25 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
-Created texture from media/img/error/error.png
-Loaded sprite error
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
-Unable to load image media/img/ring/ring.png
-Sprite texture failed to be created from media/img/ring/ring.png
-Sprite media/img/ring/ring.png not found; getting error sprite
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
 Getting sprite ring1
-Getting sprite error
+
+
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
 Unloading sprite ring1
-Unloading sprite error
---- LOG DATE: Thu Aug 25 05:24:48 2016
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 19:31:21 2016
 
 
 -- INITIALIZATION
-Initializing SDL...
-Setting texture filtering to linear...
-Creating window...
-Creating renderer...
-Initializing SDL_image...
-Initializing SDL_ttf...
-
-
-Setting global font...
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
 Spritebank created
-Created texture from media/img/error/error.png
-Loaded sprite error
+Unloading sprite NULL
 Created texture from media/img/ring/ring1.png
 Loaded sprite ring1
-Unable to load image media/img/ring/ring.png
-Sprite texture failed to be created from media/img/ring/ring.png
-Sprite media/img/ring/ring.png not found; getting error sprite
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
 Getting sprite ring1
-Getting sprite error
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
 Unloading sprite ring1
-Unloading sprite error
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 20:53:59 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 21:49:43 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 21:54:26 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 21:56:16 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 22:00:41 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 22:08:35 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sat Sep 10 22:17:34 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 09:54:33 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 09:55:27 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 09:56:53 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 09:58:47 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:02:51 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:04:23 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:04:52 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+--- LOG DATE: Sun Sep 11 10:07:00 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:12:08 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:15:49 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:18:36 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:22:17 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:24:27 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:24:51 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:34:15 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring1
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:37:47 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:39:09 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Getting sprite ring1
+
+
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+Getting sprite ring2
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+--- LOG DATE: Sun Sep 11 10:58:03 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 11:09:35 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 11:47:31 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 11:53:42 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 12:04:11 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 12:07:14 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 12:08:11 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 13:53:04 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 16:42:01 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3
+--- LOG DATE: Sun Sep 11 18:06:33 2016
+
+
+-- INITIALIZATION
+	Initializing SDL...
+	Setting texture filtering to linear...
+	Creating window...
+	Creating renderer...
+	Initializing SDL_image...
+	Initializing SDL_ttf...
+Spritebank created
+Unloading sprite NULL
+Created texture from media/img/ring/ring1.png
+Loaded sprite ring1
+Unloading sprite NULL
+Created texture from media/img/ring/ring2.png
+Loaded sprite ring2
+Unloading sprite NULL
+Created texture from media/img/ring/ring3.png
+Loaded sprite ring3
+Getting sprite ring1
+
+
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+Getting sprite ring1
+Getting sprite ring3
+-- DESTRUCTION
+Closing hardware font
+Quitting TTF
+Unloading sprite ring1
+Unloading sprite ring2
+Unloading sprite ring3

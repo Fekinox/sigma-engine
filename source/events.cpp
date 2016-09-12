@@ -1,9 +1,21 @@
-#include "events.h"
+#include "events.hpp"
+
+Event::Event()
+{
+	//Default keybinds
+	
+	//Space maps to Switch
+	k_space.reset(new SwitchPress);
+
+	//Shift maps to Animation Toggle
+	k_shift.reset(new AnimPress);
+}
 
 void Event::OnEvent(SDL_Event* e)
 {
 	switch(e->type)
 	{
+		//WINDOW EVENTS//
 		case SDL_WINDOWEVENT:
 			{
 				switch(e->window.event)
@@ -77,16 +89,22 @@ void Event::OnEvent(SDL_Event* e)
 				OnExit();
 				break;
 			}
+
+			//KEYBOARD EVENTS//
+
 		case SDL_KEYDOWN:
 			{
-				OnKeyDown(e->key.keysym.sym,e->key.keysym.mod,e->key.keysym.scancode);
+				OnKeyPress(e->key.keysym.sym,e->key.keysym.mod,e->key.keysym.scancode);
 				break;
 			}
 		case SDL_KEYUP:
 			{
-				OnKeyUp(e->key.keysym.sym,e->key.keysym.mod,e->key.keysym.scancode);
+				OnKeyRelease(e->key.keysym.sym,e->key.keysym.mod,e->key.keysym.scancode);
 				break;
 			}
+
+			//MOUSE EVENTS//
+
 		case SDL_MOUSEMOTION:
 			{
 				OnMouseMove(e->motion.x, e->motion.y, e->motion.xrel, e->motion.yrel, (e->motion.state&SDL_BUTTON(SDL_BUTTON_LEFT)) != 0, (e->motion.state&SDL_BUTTON(SDL_BUTTON_RIGHT)) != 0, (e->motion.state&SDL_BUTTON(SDL_BUTTON_MIDDLE)) != 0);
@@ -98,17 +116,17 @@ void Event::OnEvent(SDL_Event* e)
 				{
 					case SDL_BUTTON_LEFT:
 						{
-							OnLButtonDown(e->button.x, e->button.y);
+							OnLButtonPress(e->button.x, e->button.y);
 							break;
 						}
 					case SDL_BUTTON_RIGHT:
 						{
-							OnRButtonDown(e->button.x, e->button.y);
+							OnRButtonPress(e->button.x, e->button.y);
 							break;
 						}
 					case SDL_BUTTON_MIDDLE:
 						{
-							OnMButtonDown(e->button.x, e->button.y);
+							OnMButtonPress(e->button.x, e->button.y);
 							break;
 						}
 				}
@@ -120,24 +138,25 @@ void Event::OnEvent(SDL_Event* e)
 				{
 					case SDL_BUTTON_LEFT:
 						{
-							OnLButtonUp(e->button.x, e->button.y);
+							OnLButtonRelease(e->button.x, e->button.y);
 							break;
 						}
 					case SDL_BUTTON_RIGHT:
 						{
-							OnRButtonUp(e->button.x, e->button.y);
+							OnRButtonRelease(e->button.x, e->button.y);
 							break;
 						}
 					case SDL_BUTTON_MIDDLE:
 						{
-							OnMButtonUp(e->button.x, e->button.y);
+							OnMButtonRelease(e->button.x, e->button.y);
 							break;
 						}
 				}
 				break;
 			}
 
-			//Star getting things from here man!
+			//CONTROLLER EVENTS//
+
 		case SDL_JOYAXISMOTION:
 			{
 				OnJoyAxis(e->jaxis.which, e->jaxis.axis, e->jaxis.value);
@@ -155,12 +174,12 @@ void Event::OnEvent(SDL_Event* e)
 			}
 		case SDL_JOYBUTTONDOWN:
 			{
-				OnJoyButtonDown(e->jbutton.which, e->jbutton.button);
+				OnJoyButtonPress(e->jbutton.which, e->jbutton.button);
 				break;
 			}
 		case SDL_JOYBUTTONUP:
 			{
-				OnJoyButtonUp(e->jbutton.which, e->jbutton.button);
+				OnJoyButtonRelease(e->jbutton.which, e->jbutton.button);
 				break;
 			}
 		default:
